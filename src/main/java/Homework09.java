@@ -27,26 +27,27 @@ Let us list the factors of the first seven triangle numbers:
 We can see that 28 is the first triangle number to have over five divisors.
 
 What is the value of the first triangle number to have over one hundred divisors?
-    
+    //ANSWER: 73920
     */
     
     public void getSumTri(int n){
     
     int sum = 0;
-    
+    int divisor = 0;
     for(int i = 0; sum <= n; i++){
         
         sum++;
        
         if(n % sum == 0){
             System.out.println(sum);
-       
+            divisor++;
         }
         if(sum == n){
             break;
         }
         
     }
+    System.out.println("there are " + divisor + " Divisors in the number provided");
    
     
     
