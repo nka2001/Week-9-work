@@ -30,5 +30,35 @@ What is the value of the first triangle number to have over one hundred divisors
     
     */
     
+    public void getSumTri(int n){
+    
+    int sum = 0;
+    
+    for(int i = 0; sum <= n; i++){
+        
+        sum++;
+       
+        if(n % sum == 0){
+            System.out.println(sum);
+       
+        }
+        if(sum == n){
+            break;
+        }
+        
+    }
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+    
+    
     
 }
